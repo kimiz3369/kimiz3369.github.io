@@ -1,22 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://kimiz3369.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-05-21T09:19:00.086Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://kimiz3369.github.io"/>
-    <link rel="self" href="https://kimiz3369.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>https://kimiz3369.github.io/images/avatar.png</logo>
-    <icon>https://kimiz3369.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
-    <entry>
-        <title type="html"><![CDATA[线程、多线程与线程池总结]]></title>
-        <id>https://kimiz3369.github.io/post/xian-cheng-duo-xian-cheng-yu-xian-cheng-chi-zong-jie/</id>
-        <link href="https://kimiz3369.github.io/post/xian-cheng-duo-xian-cheng-yu-xian-cheng-chi-zong-jie/">
-        </link>
-        <updated>2020-05-21T09:17:00.000Z</updated>
-        <content type="html"><![CDATA[<p>先看几个概念：<br>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>线程、多线程与线程池总结 | Gridea</title>
+<link rel="shortcut icon" href="https://kimiz3369.github.io/favicon.ico?v=1590052737577">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://kimiz3369.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="线程、多线程与线程池总结 | Gridea - Atom Feed" href="https://kimiz3369.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="先看几个概念：
+线程：进程中负责程序执行的执行单元。一个进程中至少有一个线程。
+多线程：解决多任务同时执行的需求，合理使用CPU资源。多线程的运行是根据CPU切换完成，如何切换由CPU决定，因此多线程运行具有不确定性。
+线程池：基本思想还是..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://kimiz3369.github.io">
+  <img class="avatar" src="https://kimiz3369.github.io/images/avatar.png?v=1590052737577" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              线程、多线程与线程池总结
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-05-21
+              </span>
+              <span>
+                20 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>先看几个概念：<br>
 线程：进程中负责程序执行的执行单元。一个进程中至少有一个线程。</p>
 <p>多线程：解决多任务同时执行的需求，合理使用CPU资源。多线程的运行是根据CPU切换完成，如何切换由CPU决定，因此多线程运行具有不确定性。</p>
 <p>线程池：基本思想还是一种对象池的思想，开辟一块内存空间，里面存放了众多(未死亡)的线程，池中线程执行调度由池管理器来处理。当有线程任务时，从池中取一个，执行完成后线程对象归池，这样可以避免反复创建线程对象所带来的性能开销，节省了系统的资源。</p>
@@ -243,174 +318,103 @@ shutdownNow()：立即终止线程池，并尝试打断正在执行的任务，�
 链接：https://www.jianshu.com/p/b8197dd2934c<br>
 来源：简书<br>
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Spring boot整合dynamic-datasource实现多数据源的读写分离]]></title>
-        <id>https://kimiz3369.github.io/post/spring-boot-zheng-he-dynamic-datasource-shi-xian-duo-shu-ju-yuan-de-du-xie-fen-chi/</id>
-        <link href="https://kimiz3369.github.io/post/spring-boot-zheng-he-dynamic-datasource-shi-xian-duo-shu-ju-yuan-de-du-xie-fen-chi/">
-        </link>
-        <updated>2020-03-05T06:01:04.000Z</updated>
-        <content type="html"><![CDATA[<p>多数据源的读写分离<br>
-参考文章：https://mybatis.plus/guide/dynamic-datasource.html<br>
-本文环境：</p>
-<p>版本<br>
-springboot	2.1.0.RELEASE<br>
-druid	1.1.18<br>
-dynamic-datasource	2.4.2<br>
-1、maven依赖配置<br>
-<!-- druid --><br>
-<!-- https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter --><br>
-<dependency><br>
-<groupId>com.alibaba</groupId><br>
-<artifactId>druid-spring-boot-starter</artifactId><br>
-<version>1.1.18</version><br>
-</dependency><br>
-<!--主从配置依赖--><br>
-<dependency><br>
-<groupId>com.baomidou</groupId><br>
-<artifactId>dynamic-datasource-spring-boot-starter</artifactId><br>
-<version>2.4.2</version><br>
-</dependency><br>
-2、application.properties配置</p>
-<h2 id="druid连接池配置">druid连接池配置</h2>
-<h1 id="默认数据源">默认数据源</h1>
-<p>spring.datasource.dynamic.primary=master</p>
-<h1 id="主库配置-master">主库配置 master</h1>
-<p>spring.datasource.dynamic.datasource.master.username=root<br>
-spring.datasource.dynamic.datasource.master.password=root<br>
-spring.datasource.dynamic.datasource.master.driver-class-name=com.mysql.cj.jdbc.Driver<br>
-spring.datasource.dynamic.datasource.master.url=jdbc:mysql://127.0.0.1:3306/java_demo?serverTimezone=GMT%2B8&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false<br>
-spring.datasource.dynamic.datasource.master.druid.initial-size=5<br>
-spring.datasource.dynamic.datasource.master.druid.max-active=20<br>
-spring.datasource.dynamic.datasource.master.druid.min-idle=5<br>
-spring.datasource.dynamic.datasource.master.druid.max-wait=60000<br>
-spring.datasource.dynamic.datasource.master.druid.min-evictable-idle-time-millis=300000<br>
-spring.datasource.dynamic.datasource.master.druid.max-evictable-idle-time-millis=300000<br>
-spring.datasource.dynamic.datasource.master.druid.time-between-eviction-runs-millis=60000<br>
-spring.datasource.dynamic.datasource.master.druid.validation-query=select 1<br>
-spring.datasource.dynamic.datasource.master.druid.validation-query-timeout=-1<br>
-spring.datasource.dynamic.datasource.master.druid.test-on-borrow=false<br>
-spring.datasource.dynamic.datasource.master.druid.test-on-return=false<br>
-spring.datasource.dynamic.datasource.master.druid.test-while-idle=true<br>
-spring.datasource.dynamic.datasource.master.druid.pool-prepared-statements=true<br>
-spring.datasource.dynamic.datasource.master.druid.filters=stat,wall,log4j<br>
-spring.datasource.dynamic.datasource.master.druid.share-prepared-statements=true</p>
-<h1 id="从库配置-slave">从库配置 slave</h1>
-<p>spring.datasource.dynamic.datasource.slave.username=root<br>
-spring.datasource.dynamic.datasource.slave.password=root<br>
-spring.datasource.dynamic.datasource.slave.driver-class-name=com.mysql.cj.jdbc.Driver<br>
-spring.datasource.dynamic.datasource.slave.url=jdbc:mysql://127.0.0.1:3307/java_demo?serverTimezone=GMT%2B8&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false<br>
-spring.datasource.dynamic.datasource.slave.druid.initial-size=5<br>
-spring.datasource.dynamic.datasource.slave.druid.max-active=20<br>
-spring.datasource.dynamic.datasource.slave.druid.min-idle=5<br>
-spring.datasource.dynamic.datasource.slave.druid.max-wait=60000<br>
-spring.datasource.dynamic.datasource.slave.druid.min-evictable-idle-time-millis=300000<br>
-spring.datasource.dynamic.datasource.slave.druid.max-evictable-idle-time-millis=300000<br>
-spring.datasource.dynamic.datasource.slave.druid.time-between-eviction-runs-millis=60000<br>
-spring.datasource.dynamic.datasource.slave.druid.validation-query=select 1<br>
-spring.datasource.dynamic.datasource.slave.druid.validation-query-timeout=-1<br>
-spring.datasource.dynamic.datasource.slave.druid.test-on-borrow=false<br>
-spring.datasource.dynamic.datasource.slave.druid.test-on-return=false<br>
-spring.datasource.dynamic.datasource.slave.druid.test-while-idle=true<br>
-spring.datasource.dynamic.datasource.slave.druid.pool-prepared-statements=true<br>
-spring.datasource.dynamic.datasource.slave.druid.filters=stat,wall,log4j<br>
-spring.datasource.dynamic.datasource.slave.druid.share-prepared-statements=true</p>
-<h1 id="当遇到同样名字的时候是否允许覆盖注册">当遇到同样名字的时候，是否允许覆盖注册</h1>
-<p>spring.main.allow-bean-definition-overriding=true</p>
-<h2 id="druid访问地址配置">druid访问地址配置</h2>
-<p>druid.login.username=root<br>
-druid.login.password=root<br>
-druid.allow.ip=127.0.0.1<br>
-3、启动类配置<br>
-在启动类@SpringBootApplication注解中，添加排除原生Druid的配置类。</p>
-<p>@SpringBootApplication(exclude = DruidDataSourceAutoConfigure.class)<br>
-public class ApiApplication {<br>
-public static void main(String[] args) {<br>
-SpringApplication.run(ApiApplication.class, args);<br>
-}<br>
-}</p>
-<p>Q：为什么要排除DruidDataSourceAutoConfigure ？<br>
-A：DruidDataSourceAutoConfigure会注入一个DataSourceWrapper，其会在原生的spring.datasource下找url,username,password等。而我们动态数据源的配置路径是变化的。</p>
-<p>4、使用：使用 @DS 切换数据源<br>
-上面三步，已配置好读写分离，下面使用注解即可选择使用主从库。</p>
-<p>@Service<br>
-@DS(&quot;slave&quot;)<br>
-public class UserServiceImpl implements UserService {</p>
-<p>@Autowired<br>
-private JdbcTemplate jdbcTemplate;</p>
-<p>public List&lt;Map&lt;String, Object&gt;&gt; selectAll() {<br>
-return  jdbcTemplate.queryForList(&quot;select * from user&quot;);<br>
-}</p>
-<p>@Override<br>
-@DS(&quot;slave_1&quot;)<br>
-public List&lt;Map&lt;String, Object&gt;&gt; selectByCondition() {<br>
-return  jdbcTemplate.queryForList(&quot;select * from user where age &gt;10&quot;);<br>
-}<br>
-}<br>
-@DS(&quot;slave&quot;)<br>
-public interface UserMapper {</p>
-<p>@Insert(&quot;INSERT INTO user (name,age) values (#{name},#{age})&quot;)<br>
-boolean addUser(@Param(&quot;name&quot;) String name, @Param(&quot;age&quot;) Integer age);</p>
-<p>@Update(&quot;UPDATE user set name=#{name}, age=#{age} where id =#{id}&quot;)<br>
-boolean updateUser(@Param(&quot;id&quot;) Integer id, @Param(&quot;name&quot;) String name, @Param(&quot;age&quot;) Integer age);</p>
-<p>@Delete(&quot;DELETE from user where id =#{id}&quot;)<br>
-boolean deleteUser(@Param(&quot;id&quot;) Integer id);</p>
-<p>@Select(&quot;SELECT * FROM user&quot;)<br>
-@DS(&quot;slave_1&quot;)<br>
-List<User> selectAll();<br>
-}<br>
-@DS(“slave_1”) 括号内即是application.properties中配置的数据源名称，不加注解默认是访问主库master，可加在service方法上，也可加在mapper方法上，但强烈不建议同时在service和mapper注解。 (可能会有问题)<br>
-@DS 可以注解在方法上和类上，同时存在方法注解优先于类上注解。<br>
-本文的application.properties中没有配置名为slave_1的数据源，代码里只做演示示例，可将slave_1改成对应的数据源名称。<br>
-————————————————<br>
-版权声明：本文为CSDN博主「Jerry_1998」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。<br>
-原文链接：https://blog.csdn.net/weixin_44605704/article/details/97746557</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[实用工具类]]></title>
-        <id>https://kimiz3369.github.io/post/shi-yong-gong-ju-lei/</id>
-        <link href="https://kimiz3369.github.io/post/shi-yong-gong-ju-lei/">
-        </link>
-        <updated>2020-03-02T04:25:03.000Z</updated>
-        <content type="html"><![CDATA[<p>1、Gridea<br>
-下载：https://gridea.dev/<br>
-使用：https://gridea.dev/gridea-start/</p>
-<p>2、任务管理甘特图<br>
-https://www.ganttproject.biz/</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://kimiz3369.github.io/post/hello-gridea/</id>
-        <link href="https://kimiz3369.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
-]]></content>
-    </entry>
-</feed>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://kimiz3369.github.io/post/spring-boot-zheng-he-dynamic-datasource-shi-xian-duo-shu-ju-yuan-de-du-xie-fen-chi/">
+              <h3 class="post-title">
+                Spring boot整合dynamic-datasource实现多数据源的读写分离
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'kimiz3369.github.io',
+    clientSecret: 'kimiz3369.github.io',
+    repo: 'kimiz3369.github.io',
+    owner: '',
+    admin: [''],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://kimiz3369.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
