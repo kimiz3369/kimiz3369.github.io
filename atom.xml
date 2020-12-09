@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kimiz3369.github.io</id>
     <title>Gridea</title>
-    <updated>2020-08-27T15:17:24.194Z</updated>
+    <updated>2020-12-09T03:07:33.408Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kimiz3369.github.io"/>
     <link rel="self" href="https://kimiz3369.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://kimiz3369.github.io/images/avatar.png</logo>
     <icon>https://kimiz3369.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[NPOI使用手册]]></title>
+        <id>https://kimiz3369.github.io/post/npoi-shi-yong-shou-ce/</id>
+        <link href="https://kimiz3369.github.io/post/npoi-shi-yong-shou-ce/">
+        </link>
+        <updated>2020-12-09T03:07:02.000Z</updated>
+        <content type="html"><![CDATA[<p>https://www.cnblogs.com/ICE-SKY/p/5856257.html</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[阿里云RPA机器开发]]></title>
         <id>https://kimiz3369.github.io/post/a-li-yun-rpa-ji-qi-kai-fa/</id>
